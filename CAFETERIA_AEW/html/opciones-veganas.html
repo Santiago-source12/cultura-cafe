@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Opciones Veganas</title>
+
+<link rel="stylesheet" href="../css/veganas.css">
+<link rel="stylesheet" href="../css/menu.css">
+
+</head>
+
+<body>
+
+<div id="menu"></div>
+
+<script>
+fetch("../componentes/menu.html")
+.then(res=>res.text())
+.then(data=>{
+document.getElementById("menu").innerHTML=data;
+});
+
+</script>
+
+<header class="banner-vegano">
+
+<h1>
+Opciones Veganas
+</h1>
+
+<p>
+Sabor natural y productos preparados con conciencia
+</p>
+
+</header>
+
+<section class="productos">
+
+<div class="card">
+
+<img src="../imagenes/latte-vegano.jpg">
+
+<h2>
+Latte Vegano
+</h2>
+
+<p>
+Café especial con leche vegetal.
+</p>
+
+<h3>
+S/ 14.00
+</h3>
+
+<button onclick="agregar('Latte Vegano',14)">
+Agregar al carrito
+</button>
+
+</div>
+
+<div class="card">
+
+<img src="../imagenes/galletas-veganas.jpg">
+
+<h2>
+Galletas Veganas
+</h2>
+
+<p>
+Preparadas con ingredientes naturales.
+</p>
+
+<h3>
+S/ 9.00
+</h3>
+
+<button onclick="agregar('Galletas Veganas',9)">
+Agregar al carrito
+</button>
+
+</div>
+
+<div class="card">
+
+<img src="../imagenes/torta-vegana.jpg">
+
+<h2>
+Torta Vegana
+</h2>
+
+<p>
+Chocolate y sabor artesanal.
+</p>
+
+<h3>
+S/ 15.00
+</h3>
+
+<button onclick="agregar('torta Vegana',15)">
+Agregar al carrito
+</button>
+
+</div>
+
+<div class="card">
+
+<img src="../imagenes/cafe-organico.jpg">
+
+<h2>
+Café Orgánico
+</h2>
+
+<p>
+Granos seleccionados de origen natural.
+</p>
+
+<h3>
+S/ 18.00
+</h3>
+
+<button onclick="agregar('Café Orgánico',18)">
+Agregar al carrito
+</button>
+
+</div>
+
+</section>
+
+<script src="../js/carrito.js"></script>
+
+</body>
+
+</html>

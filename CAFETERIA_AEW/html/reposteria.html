@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Repostería</title>
+
+<link rel="stylesheet" href="../css/reposteria.css">
+<link rel="stylesheet" href="../css/menu.css">
+
+</head>
+
+<body>
+
+<div id="menu"></div>
+
+<script>
+fetch("../componentes/menu.html")
+.then(res=>res.text())
+.then(data=>{
+document.getElementById("menu").innerHTML=data;
+});
+
+</script>
+
+<header class="banner-reposteria">
+
+<h1>
+Repostería Artesanal
+</h1>
+
+<p>
+Postres preparados con ingredientes naturales y mucho sabor
+</p>
+
+</header>
+
+<section class="postres">
+
+<div class="card">
+
+<img src="../imagenes/cheesecake-cafe.jpg">
+
+<h2>
+Cheesecake de café
+</h2>
+
+<p>
+Suave, cremoso y perfecto para acompañar tu café.
+</p>
+
+<h3>
+S/ 14.00
+</h3>
+
+<button onclick="agregar('Cheesecake de café',14)">
+Agregar al carrito
+</button>
+
+</div>
+
+<div class="card">
+
+<img src="../imagenes/croissant.jpg">
+
+<h2>
+Croissant
+</h2>
+
+<p>
+Masa artesanal horneada cada día.
+</p>
+
+<h3>
+S/ 8.00
+</h3>
+
+<button onclick="agregar('Croissant',8)">
+Agregar al carrito
+</button>
+
+</div>
+
+<div class="card">
+
+<img src="../imagenes/brownie-cafe.jpg">
+
+<h2>
+Brownie de café
+</h2>
+
+<p>
+Chocolate intenso,con un amargo sabor a café.
+</p>
+
+<h3>
+S/ 10.00
+</h3>
+
+<button onclick="agregar('Brownie de café',10)">
+Agregar al carrito
+</button>
+
+</div>
+
+<div class="card">
+
+<img src="../imagenes/torta-moka.jpg">
+
+<h2>
+Torta de Moka
+</h2>
+
+<p>
+Postre especial para momentos únicos.
+</p>
+
+<h3>
+S/ 16.00
+</h3>
+
+<button onclick="agregar('Torta de Moka',16)">
+Agregar al carrito
+</button>
+
+</div>
+
+</section>
+
+<script src="../js/carrito.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Tienda Cultura Café</title>
+
+<link rel="stylesheet" href="../css/tienda.css">
+<link rel="stylesheet" href="../css/menu.css">
+
+</head>
+
+<body>
+
+<div id="menu"></div>
+
+<script>
+
+fetch("../componentes/menu.html")
+
+.then(res=>res.text())
+
+.then(data=>{
+
+document.getElementById("menu").innerHTML=data;
+
+});
+
+</script>
+
+<header class="banner-tienda">
+
+<h1>
+Granos de Café
+</h1>
+
+<p>
+Lleva la experiencia del café a tu hogar
+</p>
+
+</header>
+
+<section class="productos">
+
+<div class="card">
+
+<img src="../imagenes/cafe-grano.jpg">
+
+<h2>
+Café en Grano
+</h2>
+
+<p>
+Granos seleccionados de alta calidad.
+</p>
+
+<h3>
+S/ 25.00
+</h3>
+
+<button onclick="agregar('Café en Grano',25)">
+Agregar
+</button>
+
+</div>
+
+<div class="card">
+
+<img src="../imagenes/cafe-molido.jpg">
+
+<h2>
+Café Molido
+</h2>
+
+<p>
+Listo para preparar una taza perfecta.
+</p>
+
+<h3>
+S/ 22.00
+</h3>
+
+<button onclick="agregar('Café Molido',22)">
+Agregar
+</button>
+
+</div>
+
+<div class="card">
+
+<img src="../imagenes/cafe-premium.jpg">
+
+<h2>
+Café Premium
+</h2>
+
+<p>
+Café especial de origen seleccionado.
+</p>
+
+<h3>
+S/ 35.00
+</h3>
+
+<button onclick="agregar('Café Premium',35)">
+Agregar
+</button>
+
+</div>
+
+<div class="card">
+
+<img src="../imagenes/pack-cafe.jpg">
+
+<h2>
+Pack Cultura Café
+</h2>
+
+<p>
+Variedad de cafés para disfrutar.
+</p>
+
+<h3>
+S/ 50.00
+</h3>
+
+<button onclick="agregar('Pack Cultura Café',50)">
+Agregar
+</button>
+
+</div>
+
+</section>
+
+<script src="../js/tienda.js"></script>
+
+</body>
+
+</html>

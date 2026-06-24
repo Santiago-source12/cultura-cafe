@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Accesorios para Cafeteras</title>
+
+<link rel="stylesheet" href="../css/accesorios.css">
+<link rel="stylesheet" href="../css/menu.css">
+
+</head>
+
+
+<body>
+<div id="menu"></div>
+
+
+<script>
+
+
+fetch("../componentes/menu.html")
+
+.then(res=>res.text())
+
+.then(data=>{
+
+document.getElementById("menu").innerHTML=data;
+
+});
+
+
+</script>
+
+
+<header class="banner-accesorios">
+
+
+<h1>
+Accesorios para Cafeteras
+</h1>
+
+
+<p>
+Todo lo necesario para preparar el café perfecto
+</p>
+
+
+</header>
+
+
+
+
+
+<section class="productos">
+
+
+
+<div class="card">
+
+
+<img src="../imagenes/prensa.jpg">
+
+
+<h2>
+Prensa Francesa
+</h2>
+
+
+<p>
+Método clásico para café filtrado.
+</p>
+
+
+<h3>
+S/ 45.00
+</h3>
+
+
+<button onclick="agregar('Prensa Francesa',45)">
+Agregar al carrito
+</button>
+
+
+</div>
+
+
+
+
+
+<div class="card">
+
+
+<img src="../imagenes/molino.jpg">
+
+
+<h2>
+Molino de Café
+</h2>
+
+
+<p>
+Muele tus granos al momento.
+</p>
+
+
+<h3>
+S/ 80.00
+</h3>
+
+
+<button onclick="agregar('Molino de Café',80)">
+Agregar al carrito
+</button>
+
+
+</div>
+
+
+
+
+
+<div class="card">
+
+
+<img src="../imagenes/filtro.jpg">
+
+
+<h2>
+Filtros de Café
+</h2>
+
+
+<p>
+Filtros para preparación artesanal.
+</p>
+
+
+<h3>
+S/ 15.00
+</h3>
+
+
+<button onclick="agregar('Filtros de Café',15)">
+Agregar al carrito
+</button>
+
+
+</div>
+
+
+
+
+
+
+<div class="card">
+
+
+<img src="../imagenes/taza-premium.jpg">
+
+
+<h2>
+Taza Premium
+</h2>
+
+
+<p>
+Diseñada para disfrutar tu café.
+</p>
+
+
+<h3>
+S/ 25.00
+</h3>
+
+
+<button onclick="agregar('Taza Premium',25)">
+Agregar al carrito
+</button>
+
+
+</div>
+
+
+
+</section>
+
+<script src="../js/tienda.js"></script>
+
+</body>
+
+
+
+</html>

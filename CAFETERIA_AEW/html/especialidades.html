@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Especialidades en Café</title>
+
+<link rel="stylesheet" href="../css/especialidades.css">
+<link rel="stylesheet" href="../css/menu.css">
+
+</head>
+
+<body>
+
+<div id="menu"></div>
+
+<script>
+fetch("../componentes/menu.html")
+.then(res=>res.text())
+.then(data=>{
+document.getElementById("menu").innerHTML=data;
+});
+
+</script>
+
+<header class="banner-cafe">
+
+<h1>
+Especialidades en Café
+</h1>
+
+<p>
+Sabores naturales seleccionados desde el origen
+</p>
+
+</header>
+
+<section class="cafes">
+
+<div class="card">
+
+<img src="../imagenes/espresso.jpg">
+
+<h2>
+Espresso
+</h2>
+
+<p>
+Café intenso con aroma y sabor único.
+</p>
+
+<h3>
+S/ 8.00
+</h3>
+
+<button onclick="agregar('Espresso',8)">
+Agregar al carrito
+</button>
+
+</div>
+
+<div class="card">
+
+<img src="../imagenes/capuccino.jpg">
+
+<h2>
+Capuccino
+</h2>
+
+<p>
+Espuma cremosa y equilibrio perfecto.
+</p>
+
+<h3>
+S/ 12.00
+</h3>
+
+<button onclick="agregar('Capuccino',12)">
+Agregar al carrito
+</button>
+
+</div>
+
+<div class="card">
+
+<img src="../imagenes/latte.jpg">
+
+<h2>
+Latte
+</h2>
+
+<p>
+Café suave con leche vaporizada.
+</p>
+
+<h3>
+S/ 13.00
+</h3>
+
+<button onclick="agregar('Latte',13)">
+Agregar al carrito
+</button>
+
+</div>
+
+<div class="card">
+
+<img src="../imagenes/filtrado.jpg">
+
+<h2>
+Café Filtrado
+</h2>
+
+<p>
+Método artesanal para resaltar el grano.
+</p>
+
+<h3>
+S/ 15.00
+</h3>
+
+<button onclick="agregar('Café Filtrado',15)">
+Agregar al carrito
+</button>
+
+</div>
+
+</section>
+
+<script src="../js/carrito.js"></script>
+
+</body>
+
+</html>

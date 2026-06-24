@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+
+<head>
+
+
+<meta charset="UTF-8">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>Blog Cultura Café</title>
+
+
+<link rel="stylesheet" href="../css/blog.css">
+<link rel="stylesheet" href="../css/menu.css">
+
+
+</head>
+
+
+
+<body>
+<div id="menu"></div>
+
+
+<script>
+
+
+fetch("../componentes/menu.html")
+
+.then(res=>res.text())
+
+.then(data=>{
+
+document.getElementById("menu").innerHTML=data;
+
+});
+
+
+</script>
+
+
+<header class="banner-blog">
+
+
+<h1>
+Blog Cultura Café
+</h1>
+
+
+<p>
+Descubre el mundo detrás de cada taza
+</p>
+
+
+</header>
+
+
+
+
+
+
+<section id="guias" class="bloque">
+
+
+<img src="../imagenes/guias.jpg">
+
+
+<div>
+
+
+<h2>
+Guías de Preparación
+</h2>
+
+
+<p>
+
+Aprende diferentes métodos para preparar café,
+desde técnicas tradicionales hasta nuevas formas
+de disfrutar una taza perfecta.
+
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<section id="beneficios" class="bloque">
+
+
+<img src="../imagenes/beneficios.jpg">
+
+
+<div>
+
+
+<h2>
+Beneficios del Café
+</h2>
+
+
+<p>
+
+El café es una bebida natural que forma parte
+de nuestra cultura. Conoce sus características,
+propiedades y la importancia de elegir granos
+de calidad.
+
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<section id="noticias" class="bloque">
+
+
+<img src="../imagenes/noticias.jpg">
+
+
+<div>
+
+
+<h2>
+Noticias Cultura Café
+</h2>
+
+
+<p>
+
+Conoce novedades, eventos, nuevos productos
+y todo lo relacionado con nuestra cafetería.
+
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+</body>
+
+
+</html>

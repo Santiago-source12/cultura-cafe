@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Reservas</title>
+
+<link rel="stylesheet" href="../css/reservas.css">
+<link rel="stylesheet" href="../css/menu.css">
+
+</head>
+
+<body>
+
+<div id="menu"></div>
+
+<script>
+fetch("../componentes/menu.html")
+.then(res=>res.text())
+.then(data=>{
+document.getElementById("menu").innerHTML=data;
+});
+</script>
+
+<header class="banner-reserva">
+
+<h1>
+Reserva tu mesa
+</h1>
+
+<p>
+Disfruta una experiencia única en Cultura Café
+</p>
+
+</header>
+
+<section class="reserva">
+
+<h2>
+Separar una mesa
+</h2>
+
+<form id="formReserva">
+
+<label>
+Nombre completo
+</label>
+
+<input 
+type="text" 
+placeholder="Ingresa tu nombre"
+required>
+
+<label>
+Correo electrónico
+</label>
+
+<input 
+type="email"
+placeholder="ejemplo@gmail.com"
+required>
+
+<label>
+Número de celular
+</label>
+
+<input 
+type="tel"
+placeholder="999 999 999"
+required>
+
+<label>
+Ubicación
+</label>
+
+<select id="ubicacion" onchange="mostrarMapa()">
+
+<option value="">
+Selecciona una ubicación
+</option>
+
+<option value="central">
+Ubicación Central
+</option>
+
+<option value="norte">
+Ubicación Norte
+</option>
+
+</select>
+
+<label>
+Fecha
+</label>
+
+<input 
+type="date"
+required>
+
+<label>
+Hora
+</label>
+
+<input 
+type="time"
+required>
+
+<label>
+Cantidad de personas
+</label>
+
+<select id="personas" onchange="mostrarCantidad()">
+
+<option value="1">
+1 persona
+</option>
+
+<option value="2">
+2 personas
+</option>
+
+<option value="3">
+3 personas
+</option>
+
+<option value="mas">
+4 o más personas
+</option>
+
+</select>
+
+<div id="cantidadExtra" style="display:none;">
+
+<label>
+Cantidad exacta de personas
+</label>
+
+<input type="number" min="4" placeholder="Ejemplo: 8 personas" id="cantidad">
+
+</div>
+
+<button type="submit">
+Confirmar Reserva
+</button>
+
+</form>
+
+<div id="mapa">
+
+</div>
+
+<div id="mensaje">
+
+</div>
+
+</section>
+
+<script src="../js/reservas.js"></script>
+<script src="../js/mapa.js"></script>
+
+</body>
+
+</html>

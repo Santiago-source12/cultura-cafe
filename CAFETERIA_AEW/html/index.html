@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Cultura Café</title>
+
+<link rel="stylesheet" href="../css/estilos.css">
+
+<link rel="stylesheet" href="../css/menu.css">
+
+</head>
+
+
+<body>
+
+
+<!-- Aquí aparece el menú desde componentes -->
+
+<div id="menu"></div>
+
+
+
+
+<header>
+
+
+<section class="hero">
+
+
+<h1>
+El arte del café perfecto
+</h1>
+
+
+<p>
+Café de especialidad, tradición y pasión
+</p>
+
+
+</section>
+
+
+</header>
+
+
+
+
+
+<footer id="contacto">
+
+
+<h3>
+CULTURA CAFÉ ☕
+</h3>
+
+
+
+<p>
+Café natural, tradición y pasión por cada taza.
+</p>
+
+
+
+
+<div class="footer-links">
+
+
+<a href="https://www.instagram.com/" target="_blank">
+Instagram
+</a>
+
+
+
+<a href="https://www.facebook.com/" target="_blank">
+Facebook
+</a>
+
+
+
+<a href="https://wa.me/51963039980?text=Hola%20Cultura%20Café,%20tengo%20una%20consulta" target="_blank">
+Contacto
+</a>
+
+
+
+</div>
+
+
+
+<p class="copy">
+
+© 2026 Cultura Café - Todos los derechos reservados
+
+</p>
+
+
+
+</footer>
+
+
+
+
+
+<script>
+
+
+fetch("../componentes/menu.html")
+
+
+.then(res => res.text())
+
+
+.then(data => {
+
+
+document.getElementById("menu").innerHTML=data;
+
+
+});
+
+
+</script>
+
+
+
+</body>
+
+</html>

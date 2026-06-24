@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Nosotros Cultura Café</title>
+
+<link rel="stylesheet" href="../css/nosotros.css">
+<link rel="stylesheet" href="../css/menu.css">
+
+</head>
+
+
+
+<body>
+
+<div id="menu"></div>
+
+
+<script>
+
+
+fetch("../componentes/menu.html")
+
+.then(res=>res.text())
+
+.then(data=>{
+
+document.getElementById("menu").innerHTML=data;
+
+});
+
+
+</script>
+
+
+
+<header class="banner-nosotros">
+
+
+<h1>
+Cultura Café
+</h1>
+
+
+<p>
+Una historia nacida entre café, tradición y naturaleza
+</p>
+
+
+</header>
+
+
+
+
+
+<section id="historia" class="bloque">
+
+
+<img src="../imagenes/historia.jpg">
+
+
+<div>
+
+
+<h2>
+Nuestra Historia
+</h2>
+
+
+<p>
+
+Cultura Café nació con la pasión de crear un espacio
+donde las personas puedan disfrutar un café de calidad.
+
+Desde nuestros inicios buscamos trabajar con granos
+seleccionados, productores locales y procesos naturales
+para brindar una experiencia única.
+
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<section id="tostado" class="bloque">
+
+
+<img src="../imagenes/tostado.jpg">
+
+
+<div>
+
+
+<h2>
+Proceso de Tostado
+</h2>
+
+
+<p>
+
+Nuestro café pasa por un proceso cuidadoso de selección
+y tostado.
+
+Cada grano es trabajado para conservar sus aromas,
+sabores y características naturales, logrando una taza
+con identidad propia.
+
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<section id="social" class="bloque">
+
+
+<img src="../imagenes/comunidad.jpg">
+
+
+<div>
+
+
+<h2>
+Compromiso Social
+</h2>
+
+
+<p>
+
+Cultura Café busca apoyar a las comunidades cafeteras,
+valorando el trabajo de los productores y promoviendo
+prácticas responsables con el medio ambiente.
+
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+</body>
+
+
+</html>
